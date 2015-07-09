@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <LinearLayout
+            android:layout_weight=".30"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/iv_grid_item"
+                android:src="@drawable/arow_down"
+                android:layout_width="40dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_weight=".70">
+            <TableRow>
+                <TextView
+                    android:id="@+id/tv_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@+id/label"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10sp" >
+                </TextView>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@+id/label"
+                    android:layout_marginTop="5dp"
+                    android:textSize="8sp" >
+                </TextView>
+            </TableRow>
+        </TableLayout>
+    </TableRow>
+
+</TableLayout>
+
